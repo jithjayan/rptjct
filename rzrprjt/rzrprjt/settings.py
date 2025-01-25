@@ -123,5 +123,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RAZORPAY_KEY_ID= 'rzp_test_CLerpoHwzGdtyfl'
-RAZORPAY_KEY_SECRET= 'dzYbbno3gAeTI7tWJ3ycRtijQ'
+RAZORPAY_KEY_ID= 'rzp_test_CLerpHwzGdtyfl'
+RAZORPAY_KEY_SECRET= 'dzYbbn3gAeTI7tWJ3ycRtijQ'

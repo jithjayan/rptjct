@@ -24,15 +24,22 @@ def order_payment(request):
             provider_order_id=order_id
         )
         order.save()
-        data={
+        # data={
+        #         "callback_url":"http://" + "127.0.0.1:8000" + "/razorpay/callback",
+        #         "razorpay_key":settings.RAZORPAY_KEY_ID,
+        #         "order": order,
+        #     }
+        # print(data)
+        # return render(
+        #     request,
+        #     "index.html",data
+        # )
+        return render(
+            request,"index.html",{
                 "callback_url":"http://" + "127.0.0.1:8000" + "/razorpay/callback",
                 "razorpay_key":settings.RAZORPAY_KEY_ID,
-                "order":order,
+                "order": order,
             }
-        print(data)
-        return render(
-            request,
-            "index.html",data
         )
     return render(request,"index.html")
 
